@@ -1,0 +1,27 @@
+#include<stdio.h>
+#include<stdlib.h>
+
+int faktoriyel(int n)
+{
+  int carpim = 1;
+  int i=1;
+  
+  while(i<=n)
+  {
+     carpim *=i;
+     i++;
+  }
+
+  return carpim;
+}  
+
+int main(int argc, char *argv[])
+{
+  int sayi=0;
+  
+  printf("bir sayi giriniz:\n");
+  scanf("%d",&sayi);
+  
+  printf("girdiginiz sayinin faktoriyeli=%d",faktoriyel(sayi));
+  return 0;
+}
